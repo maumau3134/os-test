@@ -10,7 +10,7 @@ puppet module install Slashbunny/phpfpm
 rm /etc/puppet/manifests/site.pp
 rm /etc/puppet/manifests/node.pp
 cd
-git clone git@github.com:maumau3134/os-test.git
+git clone https://github.com/maumau3134/os-test.git
 cd os-test/
 mv default.conf /etc/nginx/sites-available/monsite
 cp site.pp /etc/puppet/manifests/
