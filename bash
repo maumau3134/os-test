@@ -7,9 +7,6 @@ apt-get update -y
 apt-get install puppet-common -y
 puppet module install jfryman/nginx --version 0.0.7
 puppet module install Slashbunny/phpfpm
-rm /etc/puppet/manifests/site.pp
-rm /etc/puppet/manifests/node.pp
-cd
 git clone https://github.com/maumau3134/os-test.git
 cd os-test/
 mv default.conf /etc/nginx/sites-available/monsite
