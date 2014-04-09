@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get update -y
-apt-get install wget -y
+apt-get install gitweb wget -y
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 dpkg -i puppetlabs-release-precise.deb
 apt-get update -y
