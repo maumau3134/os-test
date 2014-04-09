@@ -9,11 +9,11 @@ puppet module install jfryman/nginx --version 0.0.7
 puppet module install Slashbunny/phpfpm
 git clone https://github.com/maumau3134/os-test.git
 cd os-test/
-mv default.conf /etc/nginx/sites-available/monsite
 cp site.pp /etc/puppet/manifests/
 cp node.pp /etc/puppet/manifests/
 puppet apply /etc/puppet/manifests/site.pp
 cp -r /etc/nginx /etc/nginx-ori
+cp default.conf /etc/nginx/sites-available/monsite
 service nginx configtest
 service nginx restart
 mkdir /var/www
