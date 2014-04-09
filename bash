@@ -3,6 +3,7 @@ apt-get update -y
 apt-get install wget -y
 wget https://apt.puppetlabs.com/puppetlabs-release-precise.deb
 dpkg -i puppetlabs-release-precise.deb
+apt-get update -y
 apt-get install puppet-common -y
 puppet module install jfryman/nginx --version 0.0.7
 puppet module install Slashbunny/phpfpm
